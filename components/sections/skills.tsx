@@ -1,4 +1,5 @@
 import { skills } from "@/lib/site";
+import { Reveal } from "@/components/ui/reveal";
 import { Section, SectionHeading } from "@/components/ui/section";
 
 export function Skills() {
@@ -12,23 +13,22 @@ export function Skills() {
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {skills.map((group) => (
-          <div
-            key={group.title}
-            className="rounded-2xl border border-sage/15 bg-[#101714]/70 p-6"
-          >
-            <h3 className="text-sm tracking-[0.16em] text-sage uppercase">{group.title}</h3>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {group.items.map((item) => (
-                <li
-                  key={item}
-                  className="rounded-full bg-sage/10 px-3 py-1.5 text-sm text-foreground"
-                >
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+        {skills.map((group, index) => (
+          <Reveal key={group.title} delay={index * 80}>
+            <div className="lift h-full rounded-2xl border border-sage/15 bg-[#101714]/70 p-6 hover:border-sage/40">
+              <h3 className="text-sm tracking-[0.16em] text-sage uppercase">{group.title}</h3>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <li
+                    key={item}
+                    className="lift-sm rounded-full bg-sage/10 px-3 py-1.5 text-sm text-foreground hover:bg-sage/20"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
         ))}
       </div>
     </Section>

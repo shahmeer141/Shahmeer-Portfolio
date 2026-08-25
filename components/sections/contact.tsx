@@ -1,6 +1,7 @@
 import { FileText, Mail, MapPin, Send } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/brand-icons";
 import { site } from "@/lib/site";
+import { Reveal } from "@/components/ui/reveal";
 import { Section, SectionHeading } from "@/components/ui/section";
 
 const links = [
@@ -41,9 +42,9 @@ export function Contact() {
       />
 
       <div className="grid gap-4 sm:grid-cols-2">
-        {links.map((item) => {
+        {links.map((item, index) => {
           const content = (
-            <div className="flex h-full items-start gap-3 rounded-2xl border border-sage/15 bg-[#101714]/70 p-5 transition-colors hover:border-sage/35">
+            <div className="flex h-full items-start gap-3 rounded-2xl border border-sage/15 bg-[#101714]/70 p-5 hover:border-sage/40">
               <item.icon size={18} className="mt-0.5 text-sage" />
               <div>
                 <p className="text-[11px] tracking-[0.18em] text-sage uppercase">{item.label}</p>
@@ -52,37 +53,43 @@ export function Contact() {
             </div>
           );
 
-          if (!item.href) return <div key={item.label}>{content}</div>;
-
           return (
-            <a
-              key={item.label}
-              href={item.href}
-              target={item.href.startsWith("http") ? "_blank" : undefined}
-              rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-            >
-              {content}
-            </a>
+            <Reveal key={item.label} delay={index * 80}>
+              {item.href ? (
+                <a
+                  href={item.href}
+                  target={item.href.startsWith("http") ? "_blank" : undefined}
+                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="lift block h-full"
+                >
+                  {content}
+                </a>
+              ) : (
+                <div className="lift h-full">{content}</div>
+              )}
+            </Reveal>
           );
         })}
       </div>
 
-      <div className="mt-8 flex flex-wrap gap-3">
-        <a
-          href={`mailto:${site.email}`}
-          className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-[#0c110f] transition-colors hover:bg-sage-bright"
-        >
-          <Send size={16} />
-          Send Email
-        </a>
-        <a
-          href={site.resumeUrl}
-          className="inline-flex items-center gap-2 rounded-full border border-sage/30 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-sage hover:bg-sage/10"
-        >
-          <FileText size={16} />
-          Download Resume
-        </a>
-      </div>
+      <Reveal delay={200}>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <a
+            href={`mailto:${site.email}`}
+            className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-[#0c110f] transition-colors hover:bg-sage-bright"
+          >
+            <Send size={16} />
+            Send Email
+          </a>
+          <a
+            href={site.resumeUrl}
+            className="inline-flex items-center gap-2 rounded-full border border-sage/30 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-sage hover:bg-sage/10"
+          >
+            <FileText size={16} />
+            Download Resume
+          </a>
+        </div>
+      </Reveal>
     </Section>
   );
 }

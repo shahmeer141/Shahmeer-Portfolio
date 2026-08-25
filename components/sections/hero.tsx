@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowDown, FileText, Mail, MapPin } from "lucide-react";
 import { site, techStack } from "@/lib/site";
 import { Container } from "@/components/ui/section";
+import { TechIcon } from "@/components/ui/tech-icon";
 
 export function Hero() {
   return (
@@ -95,13 +96,13 @@ export function Hero() {
           Technologies I Work With
         </p>
         <div className="overflow-hidden">
-          <div className="animate-marquee flex w-max gap-10 pr-10">
+          <div className="animate-marquee marquee-track flex w-max gap-10 pr-10">
             {[...techStack, ...techStack].map((tech, index) => (
               <span
                 key={`${tech}-${index}`}
-                className="flex items-center gap-2 text-sm text-sage-bright/90"
+                className="lift-sm flex items-center gap-2.5 text-sm text-sage-bright/90"
               >
-                <span className="h-1 w-1 rounded-full bg-sage" />
+                <TechIcon name={tech} />
                 {tech}
               </span>
             ))}

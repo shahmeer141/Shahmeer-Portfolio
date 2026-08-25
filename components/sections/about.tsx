@@ -1,4 +1,5 @@
 import { aboutHighlights, aboutParagraphs } from "@/lib/site";
+import { Reveal } from "@/components/ui/reveal";
 import { Section, SectionHeading } from "@/components/ui/section";
 
 export function About() {
@@ -13,22 +14,23 @@ export function About() {
 
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <div className="grid grid-cols-2 gap-3">
-          {aboutHighlights.map((item) => (
-            <div
-              key={item.label}
-              className="rounded-2xl border border-sage/15 bg-moss/60 p-5"
-            >
-              <p className="text-[11px] tracking-[0.18em] text-sage uppercase">{item.label}</p>
-              <p className="mt-2 font-serif text-2xl leading-snug text-foreground">{item.value}</p>
-            </div>
+          {aboutHighlights.map((item, index) => (
+            <Reveal key={item.label} delay={index * 90}>
+              <div className="lift rounded-2xl border border-sage/15 bg-moss/60 p-5 hover:border-sage/40">
+                <p className="text-[11px] tracking-[0.18em] text-sage uppercase">{item.label}</p>
+                <p className="mt-2 font-serif text-2xl leading-snug text-foreground">{item.value}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
 
-        <div className="space-y-5 text-base leading-7 text-muted">
-          {aboutParagraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </div>
+        <Reveal delay={160}>
+          <div className="space-y-5 text-base leading-7 text-muted">
+            {aboutParagraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </Section>
   );

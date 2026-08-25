@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
+import { Reveal } from "@/components/ui/reveal";
 
 export function Container({
   children,
@@ -46,16 +47,18 @@ export function SectionHeading({
   description?: string;
 }) {
   return (
-    <div className="mb-14 max-w-2xl">
-      <p className="mb-3 font-mono text-xs tracking-[0.22em] text-sage uppercase">
-        {index} — {eyebrow}
-      </p>
-      <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">
-        {title}
-      </h2>
-      {description ? (
-        <p className="mt-4 text-base leading-7 text-muted">{description}</p>
-      ) : null}
-    </div>
+    <Reveal>
+      <div className="mb-14 max-w-2xl">
+        <p className="mb-3 font-mono text-xs tracking-[0.22em] text-sage uppercase">
+          {index} — {eyebrow}
+        </p>
+        <h2 className="font-serif text-4xl leading-tight text-foreground sm:text-5xl">
+          {title}
+        </h2>
+        {description ? (
+          <p className="mt-4 text-base leading-7 text-muted">{description}</p>
+        ) : null}
+      </div>
+    </Reveal>
   );
 }
