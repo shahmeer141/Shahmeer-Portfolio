@@ -1,0 +1,36 @@
+import { skills } from "@/lib/site";
+import { Section, SectionHeading } from "@/components/ui/section";
+
+export function Skills() {
+  return (
+    <Section id="skills">
+      <SectionHeading
+        index="04"
+        eyebrow="Skills"
+        title="Tools I work with"
+        description="Technologies I use to bring ideas to life"
+      />
+
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {skills.map((group) => (
+          <div
+            key={group.title}
+            className="rounded-2xl border border-sage/15 bg-[#101714]/70 p-6"
+          >
+            <h3 className="text-sm tracking-[0.16em] text-sage uppercase">{group.title}</h3>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <li
+                  key={item}
+                  className="rounded-full bg-sage/10 px-3 py-1.5 text-sm text-foreground"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </Section>
+  );
+}
