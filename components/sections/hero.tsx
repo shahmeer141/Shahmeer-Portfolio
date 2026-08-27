@@ -35,14 +35,14 @@ export function Hero() {
             <div className="mt-9 flex flex-wrap gap-3">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-sage-bright"
+                className="lift-xs inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-background hover:bg-sage-bright"
               >
                 <Mail size={16} />
                 Get in Touch
               </a>
               <a
                 href={site.resumeUrl}
-                className="inline-flex items-center gap-2 rounded-full border border-sage/30 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:border-sage hover:bg-sage/10"
+                className="lift-xs inline-flex items-center gap-2 rounded-full border border-sage/30 px-5 py-2.5 text-sm font-medium text-foreground hover:border-sage hover:bg-sage/10"
               >
                 <FileText size={16} />
                 Resume
@@ -96,11 +96,11 @@ export function Hero() {
           Technologies I Work With
         </p>
         <div className="overflow-hidden">
-          <div className="animate-marquee marquee-track flex w-max gap-10 pr-10">
+          <div className="animate-marquee flex w-max gap-10 pr-10">
             {[...techStack, ...techStack].map((tech, index) => (
               <span
                 key={`${tech}-${index}`}
-                className="lift-sm flex items-center gap-2.5 text-sm text-foreground"
+                className="flex items-center gap-2.5 text-sm text-foreground"
               >
                 <TechIcon name={tech} />
                 {tech}

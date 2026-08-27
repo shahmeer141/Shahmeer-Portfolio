@@ -21,7 +21,7 @@ function CardList({
       </div>
       <ul className="space-y-6">
         {items.map((item) => (
-          <li key={`${item.title}-${item.org}`} className="lift-sm rounded-xl p-1">
+          <li key={`${item.title}-${item.org}`}>
             <p className="text-foreground">{item.title}</p>
             <p className="mt-1 text-sm text-sage-bright">{item.org}</p>
             <p className="mt-1 font-mono text-xs text-muted">{item.period}</p>

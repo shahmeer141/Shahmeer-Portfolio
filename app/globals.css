@@ -118,6 +118,19 @@ body {
   box-shadow: var(--shadow);
 }
 
+.lift-xs {
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.lift-xs:hover {
+  transform: translateY(-3px) scale(1.015);
+  box-shadow: 0 8px 18px rgba(17, 17, 17, 0.08);
+}
+
 .lift-sm {
   transition:
     transform 0.22s ease,
@@ -127,10 +140,6 @@ body {
 
 .lift-sm:hover {
   transform: translateY(-3px) scale(1.06);
-}
-
-.marquee-track:hover {
-  animation-play-state: paused;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -146,7 +155,8 @@ body {
   }
 
   .lift:hover,
-  .lift-sm:hover {
+  .lift-sm:hover,
+  .lift-xs:hover {
     transform: none;
     box-shadow: none;
   }
