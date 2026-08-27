@@ -35,7 +35,7 @@ export function Hero() {
             <div className="mt-9 flex flex-wrap gap-3">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-[#0c110f] transition-colors hover:bg-sage-bright"
+                className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-sage-bright"
               >
                 <Mail size={16} />
                 Get in Touch
@@ -69,7 +69,7 @@ export function Hero() {
                   priority
                 />
               ) : (
-                <div className="flex h-full flex-col items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgba(139,168,136,0.28),transparent_55%)]">
+                <div className="flex h-full flex-col items-center justify-center bg-[radial-gradient(circle_at_30%_20%,rgba(196,92,38,0.18),transparent_55%)]">
                   <span className="font-serif text-7xl text-sage-bright">{site.shortName}</span>
                   <span className="mt-3 text-sm tracking-[0.2em] text-muted uppercase">
                     {site.name}
@@ -91,7 +91,7 @@ export function Hero() {
         </a>
       </Container>
 
-      <div className="mt-16 border-y border-sage/10 bg-[#0c110f]/40 py-5">
+      <div className="mt-16 border-y border-sage/10 bg-background/40 py-5">
         <p className="mb-4 text-center text-[11px] tracking-[0.24em] text-muted uppercase">
           Technologies I Work With
         </p>
@@ -100,7 +100,7 @@ export function Hero() {
             {[...techStack, ...techStack].map((tech, index) => (
               <span
                 key={`${tech}-${index}`}
-                className="lift-sm flex items-center gap-2.5 text-sm text-sage-bright/90"
+                className="lift-sm flex items-center gap-2.5 text-sm text-foreground"
               >
                 <TechIcon name={tech} />
                 {tech}

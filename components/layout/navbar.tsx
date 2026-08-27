@@ -29,7 +29,7 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
         scrolled || open
-          ? "border-b border-sage/15 bg-[#0c110f]/85 backdrop-blur-md"
+          ? "border-b border-sage/15 bg-background/85 backdrop-blur-md"
           : "border-b border-transparent bg-transparent",
       )}
     >
@@ -67,7 +67,7 @@ export function Navbar() {
       </Container>
 
       {open ? (
-        <div className="border-t border-sage/15 bg-[#0c110f] lg:hidden">
+        <div className="border-t border-sage/15 bg-background lg:hidden">
           <Container className="flex flex-col gap-1 py-6">
             {nav.map((item) => (
               <a

@@ -30,10 +30,9 @@ export function TechIcon({ name }: { name: string }) {
   }
 
   return (
-    // Simple Icons CDN — brand mark, tinted to sage
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={`https://cdn.simpleicons.org/${slug}/b5d0b1`}
+      src={`https://cdn.simpleicons.org/${slug}`}
       alt=""
       width={18}
       height={18}

@@ -15,10 +15,10 @@ export function Experience() {
       <ol className="relative space-y-8 border-l border-sage/20 pl-6 sm:pl-8">
         {experience.map((job, index) => (
           <li key={`${job.company}-${job.period}`} className="relative">
-            <span className="absolute top-1.5 -left-[31px] h-3 w-3 rounded-full border-2 border-sage bg-[#0c110f] sm:-left-[39px]" />
+            <span className="absolute top-1.5 -left-[31px] h-3 w-3 rounded-full border-2 border-sage bg-background sm:-left-[39px]" />
 
             <Reveal delay={index * 110}>
-              <article className="lift rounded-2xl border border-sage/15 bg-[#101714]/70 p-6 hover:border-sage/40 sm:p-8">
+              <article className="lift rounded-2xl border border-sage/15 bg-surface/70 p-6 hover:border-sage/40 sm:p-8">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                   <div>
                     <h3 className="text-xl text-foreground">{job.role}</h3>

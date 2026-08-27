@@ -44,7 +44,7 @@ export function Contact() {
       <div className="grid gap-4 sm:grid-cols-2">
         {links.map((item, index) => {
           const content = (
-            <div className="flex h-full items-start gap-3 rounded-2xl border border-sage/15 bg-[#101714]/70 p-5 hover:border-sage/40">
+            <div className="flex h-full items-start gap-3 rounded-2xl border border-sage/15 bg-surface/70 p-5 hover:border-sage/40">
               <item.icon size={18} className="mt-0.5 text-sage" />
               <div>
                 <p className="text-[11px] tracking-[0.18em] text-sage uppercase">{item.label}</p>
@@ -76,7 +76,7 @@ export function Contact() {
         <div className="mt-8 flex flex-wrap gap-3">
           <a
             href={`mailto:${site.email}`}
-            className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-[#0c110f] transition-colors hover:bg-sage-bright"
+            className="inline-flex items-center gap-2 rounded-full bg-sage px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-sage-bright"
           >
             <Send size={16} />
             Send Email

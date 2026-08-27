@@ -20,7 +20,7 @@ export function Projects() {
           const card = (
             <div
               className={cn(
-                "group h-full rounded-2xl border border-sage/15 bg-[#101714]/70 p-6 hover:border-sage/40 hover:bg-moss/50 sm:p-8",
+                "group h-full rounded-2xl border border-sage/15 bg-surface/70 p-6 hover:border-sage/40 hover:bg-moss/50 sm:p-8",
                 project.featured && "lg:grid lg:grid-cols-[1.2fr_0.8fr] lg:gap-8",
               )}
             >

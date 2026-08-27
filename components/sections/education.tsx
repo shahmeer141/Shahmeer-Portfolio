@@ -14,7 +14,7 @@ function CardList({
   items: { title: string; org: string; period: string; detail?: string }[];
 }) {
   return (
-    <div className="lift h-full rounded-2xl border border-sage/15 bg-[#101714]/70 p-6 hover:border-sage/40 sm:p-8">
+    <div className="lift h-full rounded-2xl border border-sage/15 bg-surface/70 p-6 hover:border-sage/40 sm:p-8">
       <div className="mb-6 flex items-center gap-2 text-sage-bright">
         {icon}
         <h3 className="text-lg text-foreground">{heading}</h3>

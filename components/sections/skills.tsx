@@ -15,7 +15,7 @@ export function Skills() {
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((group, index) => (
           <Reveal key={group.title} delay={index * 80}>
-            <div className="lift h-full rounded-2xl border border-sage/15 bg-[#101714]/70 p-6 hover:border-sage/40">
+            <div className="lift h-full rounded-2xl border border-sage/15 bg-surface/70 p-6 hover:border-sage/40">
               <h3 className="text-sm tracking-[0.16em] text-sage uppercase">{group.title}</h3>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => (
