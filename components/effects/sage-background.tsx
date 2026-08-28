@@ -71,15 +71,15 @@ export function SageBackground() {
         }}
       />
 
-      <div
-        className="absolute h-10 w-10 rounded-full bg-sage/50 blur-[10px]"
+      {/* <div
+        className="absolute h-10 w-10 rounded-full bg-sage/30 blur-[15px]"
         style={{
           left: "calc(var(--mx) * 100%)",
           top: "calc(var(--my) * 100%)",
           transform: "translate(-50%, -50%)",
         }}
-      />
-      <div
+      /> */}
+      {/* <div
         className="absolute h-40 w-40 rounded-full bg-gold/10 blur-[40px]"
         style={{
           left: "calc(var(--mx) * 100%)",
@@ -87,7 +87,7 @@ export function SageBackground() {
           transform:
             "translate(calc(-50% + 28px), calc(-50% - 18px))",
         }}
-      />
+      /> */}
 
       {objects.map((item, index) => {
         const shape =

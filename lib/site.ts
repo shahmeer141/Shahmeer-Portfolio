@@ -48,7 +48,7 @@ export const site = {
    * TODO: Apni photo `public/profile.jpg` mein daalo, phir neeche path set karo.
    * `null` rehne par initials (shortName) dikhengi.
    */
-  photo: null as string | null,
+  photo: "/profile.jpg",
 
   /** TODO: Footer copyright year */
   copyrightYear: 2026,
