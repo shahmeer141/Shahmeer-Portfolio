@@ -51,13 +51,7 @@ export function Hero() {
           </div>
 
           <div className="relative mx-auto w-full max-w-sm">
-            <div
-              className="absolute -inset-6 rounded-[2rem] border border-sage/15"
-              style={{
-                transform:
-                  "translate3d(calc((var(--mx, 0.5) - 0.5) * 12px), calc((var(--my, 0.5) - 0.5) * 10px), 0)",
-              }}
-            />
+            <div className="absolute -inset-6 rounded-[2rem] border border-sage/15" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem] border border-sage/25 bg-moss">
               {site.photo ? (
                 <Image
