@@ -17,6 +17,9 @@ const instrument = Instrument_Serif({
 export const metadata: Metadata = {
   title: site.title,
   description: site.description,
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

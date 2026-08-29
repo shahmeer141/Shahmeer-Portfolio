@@ -102,15 +102,4 @@ body {
   html {
     scroll-behavior: auto;
   }
-
-  .animate-marquee {
-    animation: none;
-  }
-
-  .lift:hover,
-  .lift-sm:hover,
-  .lift-xs:hover {
-    transform: none;
-    box-shadow: none;
-  }
 }

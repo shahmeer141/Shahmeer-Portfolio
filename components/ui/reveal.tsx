@@ -19,9 +19,11 @@ export function Reveal({
     const node = ref.current;
     if (!node) return;
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setVisible(true);
-      return;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (reducedMotion.matches) {
+      const frame = window.requestAnimationFrame(() => setVisible(true));
+      return () => window.cancelAnimationFrame(frame);
     }
 
     const observer = new IntersectionObserver(
@@ -42,7 +44,7 @@ export function Reveal({
     <div
       ref={ref}
       className={cn(
-        "ease-out motion-reduce:translate-y-0 motion-reduce:scale-100 motion-reduce:opacity-100",
+        "ease-out",
         visible
           ? "translate-y-0 scale-100 opacity-100"
           : "translate-y-10 scale-[1.05] opacity-0",
