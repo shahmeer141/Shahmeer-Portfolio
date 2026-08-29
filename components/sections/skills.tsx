@@ -1,6 +1,7 @@
 import { skills } from "@/lib/site";
 import { Reveal } from "@/components/ui/reveal";
 import { Section, SectionHeading } from "@/components/ui/section";
+import { TechIcon } from "@/components/ui/tech-icon";
 
 export function Skills() {
   return (
@@ -21,9 +22,10 @@ export function Skills() {
                 {group.items.map((item) => (
                   <li
                     key={item}
-                    className="lift-sm rounded-full bg-sage/10 px-3 py-1.5 text-sm text-foreground hover:bg-sage/20"
+                    className="lift-sm inline-flex items-center gap-2 rounded-full bg-sage/10 px-3 py-1.5 text-sm text-foreground hover:bg-sage/20"
                   >
-                    {item}
+                    <TechIcon name={item} />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>

@@ -42,7 +42,7 @@ export function Reveal({
     <div
       ref={ref}
       className={cn(
-        "ease-out motion-reduce:translate-y-0 motion-reduce:scale-100 motion-reduce:opacity-100",
+        "ease-out",
         visible
           ? "translate-y-0 scale-100 opacity-100"
           : "translate-y-10 scale-[1.05] opacity-0",
