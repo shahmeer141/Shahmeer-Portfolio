@@ -30,13 +30,13 @@ export const site = {
   /** TODO: Apna email */
   email: "shahmeersiddique296@gmail.com",
   /** TODO: LinkedIn profile URL */
-  linkedin: "https://linkedin.com/in/your-handle",
+  linkedin: "https://linkedin.com/in/shahmeernadeem141",
   /** TODO: LinkedIn display text */
   linkedinLabel: "Shahmeer Nadeem",
   /** TODO: GitHub profile URL */
   github: "https://github.com/shahmeer141",
   /** TODO: GitHub display text */
-  githubLabel: "Shahmeer Nadeem",
+  githubLabel: "github.com/shahmeer141",
   /**
    * TODO: Resume file `public/resume.pdf` mein add karke path confirm karo.
    * File na ho to button 404 dega — pehle PDF public folder mein rakho.
@@ -77,13 +77,13 @@ export const techStack = [
   "Vercel",
 ];
 
-/** TODO: About section ke 4 highlight cards */
+/** TODO: About section ke 4 highlight cards — icon: code | layers | pin | rocket */
 export const aboutHighlights = [
-  { label: "Focus", value: "Full-Stack" },
-  { label: "Stack", value: "Web / Mobile Apps" },
-  { label: "Based in", value: "Lahore, Pakistan" },
-  { label: "Projects", value: "10+" },
-];
+  { label: "Focus", value: "Full-Stack", icon: "code" },
+  { label: "Stack", value: "Web / Mobile Apps", icon: "layers" },
+  { label: "Based in", value: "Lahore, Pakistan", icon: "pin" },
+  { label: "Projects", value: "10+", icon: "rocket" },
+] as const;
 
 /**
  * TODO: About paragraphs — apni story 2–4 paragraphs mein likho.
@@ -149,11 +149,10 @@ export type ProjectItem = {
  */
 export const projects: ProjectItem[] = [
   {
-    title: "Project One — SaaS Dashboard",
+    title: "Project One — Minimis Flow",
     description:
       "A product dashboard with auth, role-based views, and real-time updates. Replace this with what you actually built, the problem it solved, and the stack you used.",
     tags: ["Next.js", "Node.js", "MongoDB", "Tailwind"],
-    href: "https://example.com",
     featured: true,
   },
   {
@@ -161,7 +160,6 @@ export const projects: ProjectItem[] = [
     description:
       "A storefront with catalog, cart, and checkout flow. Add a sentence about the client, the market, or a technical challenge you solved.",
     tags: ["React.js", "Express", "REST APIs", "MongoDB"],
-    href: "https://example.com",
     featured: true,
   },
   {
@@ -169,7 +167,6 @@ export const projects: ProjectItem[] = [
     description:
       "A content-rich marketing website with SEO-friendly pages and a fast, responsive layout.",
     tags: ["Next.js", "Tailwind CSS", "SEO"],
-    href: "https://example.com",
   },
   {
     title: "Project Four — Internal Tool",
@@ -195,27 +192,27 @@ export const projects: ProjectItem[] = [
 export const skills = [
   {
     title: "Languages",
-    items: ["JavaScript (ES6+)", "TypeScript", "Kotlin", "Python", "HTML5", "CSS3", "SQL"],
+    items: ["JavaScript (ES6+)", "Kotlin", "Python", "PHP", "HTML5", "CSS3", "SQL"],
   },
   {
     title: "Frontend",
-    items: ["React.js", "Next.js", "Redux", "JetPack Compose", "Tailwind CSS", "Responsive UI"],
+    items: ["React.js", "Next.js", "TypeScript", "Redux", "JetPack Compose", "Tailwind CSS", "Bootstrap", "Material UI", "Responsive UI"],
   },
   {
     title: "Backend",
-    items: ["Node.js", "Express.js", "Laravel", "REST APIs", "JWT Auth"],
+    items: ["Node.js", "Express.js", "Laravel", "REST APIs", "JWT Auth", "Retrofit"],
   },
   {
     title: "Database",
-    items: ["MongoDB", "MySQL"],
+    items: ["MongoDB", "MySQL", "SQLite", "RoomDB"],
   },
   {
-    title: "Tools",
-    items: ["Git", "GitHub", "Postman", "VS Code", "Android Studio"],
+    title: "Tools & Libraries",
+    items: ["Git", "GitHub", "Postman", "VS Code", "Android Studio", "Jupyter Notebook", "Android SDK", "Figma", "Dagger Hilt"],
   },
   {
     title: "Deployment",
-    items: ["Vercel", "Netlify", "AWS basics"],
+    items: ["Vercel", "Netlify", "AWS S3"],
   },
 ];
 
