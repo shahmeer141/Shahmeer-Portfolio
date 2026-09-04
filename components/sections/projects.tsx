@@ -3,7 +3,6 @@ import { projects } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/ui/reveal";
 import { Section, SectionHeading } from "@/components/ui/section";
-import { TechIcon } from "@/components/ui/tech-icon";
 
 export function Projects() {
   return (
@@ -49,9 +48,8 @@ export function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="lift-sm inline-flex items-center gap-2 rounded-full border border-sage/20 px-3 py-1 text-xs text-sage-bright hover:border-sage/50 hover:bg-sage/10"
+                    className="lift-sm rounded-full border border-sage/20 px-3 py-1 text-xs text-sage-bright hover:border-sage/50 hover:bg-sage/10"
                   >
-                    <TechIcon name={tag} />
                     {tag}
                   </span>
                 ))}

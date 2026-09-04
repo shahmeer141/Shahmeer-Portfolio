@@ -156,7 +156,7 @@ export const projects: ProjectItem[] = [
     title: "Project One — Minimis Flow",
     description:
       "Building Fitness Tracking AR Glasses Android App - Minimis Flow from scratch using Kotlin/Java that gives you freehand tracking experience only using AR glasses with Live HUD covering Heart Rate, Pace, Distance, Speed, Cadence, Power and much more. Integrated Google Maps and turn by turn Navigation inside the app using Google Maps API alongside Navigation SDK, Places API. Worked with Strava public APIS for Live Segments and Leaderboards. Implemented Strava OAuth2.0 Authentication.",
-    tags: ["Kotlin", "RoomDB", "Dagger Hilt", "MVI", "Navigation SDK", "Google Maps API", "Places API", "Android Sensors", "Strava APIs", "OAuth 2.0"],
+    tags: ["Kotlin", "RoomDB", "Dagger Hilt", "Navigation SDK", "Google Maps API", "Places API", "Android Sensors", "Strava APIs", "OAuth 2.0"],
   },
   {
     title: "Project Two — InMap",
