@@ -62,6 +62,8 @@ export const site = {
 /** TODO: Hero ke neeche tech marquee — jo technologies use karte ho */
 export const techStack = [
   "Kotlin",
+  "Flutter",
+  "Dart",
   "Python",
   "React",
   "Next.js",
@@ -91,7 +93,7 @@ export const aboutHighlights = [
  */
 export const aboutParagraphs = [
   "I'm a Full Stack Software Engineer based in Lahore, Pakistan working on Cross Platforms. I enjoy turning messy ideas into calm, usable products — the kind with clear interfaces, solid APIs, and code you can still read six months later.",
-  "My work covers the whole stack: For Web: React and Next.js on the frontend, Node.js services on the backend, and thoughtful database design in between. For Android: Kotlin/Java, RoomDB, Retrofit, Dagger Hilt. I care about performance, accessibility, and shipping features that hold up in production.",
+  "My work covers the whole stack: For Web: React and Next.js on the frontend, Node.js services on the backend, MongoDB, SQL for databases. For Android: Kotlin/Java, Flutter/Dart, RoomDB, SQLite, Retrofit, Dagger Hilt. I care about performance, accessibility, and shipping features that hold up in production.",
   "I'm currently open to new opportunities and collaboration. I do my best work in teams that value craft, feedback, and building things that matter.",
 ];
 
@@ -151,52 +153,38 @@ export const projects: ProjectItem[] = [
   {
     title: "Project One — Minimis Flow",
     description:
-      "A product dashboard with auth, role-based views, and real-time updates. Replace this with what you actually built, the problem it solved, and the stack you used.",
-    tags: ["Next.js", "Node.js", "MongoDB", "Tailwind"],
-    featured: true,
+      "Building Fitness Tracking AR Glasses Android App - Minimis Flow from scratch using Kotlin/Java that gives you freehand tracking experience only using AR glasses with Live HUD covering Heart Rate, Pace, Distance, Speed, Cadence, Power and much more. Integrated Google Maps and turn by turn Navigation inside the app using Google Maps API alongside Navigation SDK, Places API. Worked with Strava public APIS for Live Segments and Leaderboards. Implemented Strava OAuth2.0 Authentication.",
+    tags: ["Kotlin", "RoomDB", "Dagger Hilt", "MVI", "Navigation SDK", "Google Maps API", "Places API", "Android Sensors", "Strava APIs", "OAuth 2.0"],
   },
   {
-    title: "Project Two — E-commerce Store",
+    title: "Project Two — InMap",
     description:
-      "A storefront with catalog, cart, and checkout flow. Add a sentence about the client, the market, or a technical challenge you solved.",
-    tags: ["React.js", "Express", "REST APIs", "MongoDB"],
-    featured: true,
+      "Building a GPS-denied indoor positioning system in Flutter/Dart from scratch that tracks a pedestrian on a metric 2D map using only the phone’s accelerometer, gyroscope, and magnetometer.",
+    tags: ["Flutter", "Dart", "IMU / Sensor Fusion", "Pedestrian Dead Reckoning", "Geomagnetic Fingerprinting", "SQLite", "Riverpod"],
   },
   {
-    title: "Project Three — Marketing Site",
+    title: "Project Three — Foodies",
     description:
-      "A content-rich marketing website with SEO-friendly pages and a fast, responsive layout.",
-    tags: ["Next.js", "Tailwind CSS", "SEO"],
+      "A dynamic and user friendly food ordering and restaurant management web application where customers can easily discover restaurants and explore its options to order food. While restaurant owners can manage their operations like profile management, menus, orders, payments through restaurant panel. The admin panel is responsible for the management of both accounts.",
+    tags: ["Next.js", "ReactBootstrap", "JWT", "MongoDB", "Node.js", "Express.js"],
   },
   {
-    title: "Project Four — Internal Tool",
+    title: "Project Four — Real-time Chat Application",
     description:
-      "An internal tool that replaced a spreadsheet workflow. Mention the outcome if you can (time saved, errors reduced, etc.).",
-    tags: ["React.js", "Node.js", "PostgreSQL"],
-  },
-  {
-    title: "Project Five — Portfolio / Blog",
-    description:
-      "A personal or client publication with articles, tags, and a clean reading experience.",
-    tags: ["Next.js", "MDX", "Vercel"],
-  },
-  {
-    title: "Project Six — API Platform",
-    description:
-      "Backend APIs for a mobile or web client: authentication, CRUD resources, and deployment.",
-    tags: ["Node.js", "Express", "MongoDB", "JWT"],
-  },
+      "Build using MERN+Socket.io+TailwindCSS+DaisyUI, Authentication and Authorization with JWT, Real-time messaging with Socket.io, Online user status, Global state management with Zustand, Email notification using NodeMailer, Error handling on both server and client side.",
+    tags: ["React.js", "Node.js", "TailwindCSS", "DaisyUI", "Socket.io", "JWT", "Zustand", "NodeMailer"],
+  }
 ];
 
 /** TODO: Skills — category heading + list. Items add/remove freely. */
 export const skills = [
   {
     title: "Languages",
-    items: ["JavaScript (ES6+)", "Kotlin", "Python", "PHP", "HTML5", "CSS3", "SQL"],
+    items: ["JavaScript (ES6+)", "Kotlin", "Dart", "Python", "PHP", "HTML5", "CSS3", "SQL"],
   },
   {
     title: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript", "Redux", "JetPack Compose", "Tailwind CSS", "Bootstrap", "Material UI", "Responsive UI"],
+    items: ["Flutter", "React.js", "Next.js", "TypeScript", "Redux", "JetPack Compose", "Tailwind CSS", "Bootstrap", "Material UI", "Responsive UI"],
   },
   {
     title: "Backend",
@@ -212,7 +200,7 @@ export const skills = [
   },
   {
     title: "Deployment",
-    items: ["Vercel", "Netlify", "AWS S3"],
+    items: ["Vercel", "Netlify", "AWS S3", "AWS EC2"],
   },
 ];
 
