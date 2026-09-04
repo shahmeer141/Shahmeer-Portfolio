@@ -117,9 +117,10 @@ export const experience: ExperienceItem[] = [
     location: "Lahore, Pakistan",
     period: "Apr 2026 — Present",
     bullets: [
-      "Building Android AR glasses app - Minimis Flow.",
-      "Build React / Next.js interfaces and Node.js REST APIs used by real users.",
-      "Collaborate with the team through Git, code reviews, and iterative delivery.",
+      "Building Cross Platforms Apps Android/IOS using Kotlin/Java and Flutter/Dart.",
+      "Designing and implementing REST APIs and database schemas for mobile applications.",
+      "Collaborating with cross-functional teams to define, design, and ship new features.",
+      "Working with the team through Git, code reviews, and iterative delivery.",
     ],
     stack: ["Kotlin", "Dagger Hilt", "Retrofit", "RoomDB", "MVI", "Node.js"],
   },
@@ -129,6 +130,7 @@ export const experience: ExperienceItem[] = [
     location: "Lahore, Pakistan",
     period: "Sep 2025 — Mar 2026",
     bullets: [
+      "Build React / Next.js interfaces and Node.js REST APIs used by real users",
       "Shipped responsive UI with React, TypeScript, and Tailwind CSS.",
       "Integrated REST APIs and improved page performance and accessibility.",
       "Worked closely with designers to turn mockups into production-ready pages.",
