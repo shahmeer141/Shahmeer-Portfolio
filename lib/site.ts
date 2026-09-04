@@ -122,7 +122,7 @@ export const experience: ExperienceItem[] = [
       "Collaborating with cross-functional teams to define, design, and ship new features.",
       "Working with the team through Git, code reviews, and iterative delivery.",
     ],
-    stack: ["Kotlin", "Dagger Hilt", "Retrofit", "RoomDB", "MVI", "Node.js"],
+    stack: ["Kotlin", "Flutter", "Dart", "Dagger Hilt", "Retrofit", "RoomDB", "Node.js"],
   },
   {
     role: "MERN Developer - Onsite",
