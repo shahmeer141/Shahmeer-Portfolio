@@ -1,9 +1,11 @@
-import { Bot, Database, Mail, MonitorSmartphone, Network, type LucideIcon } from "lucide-react";
+import { Bot, Database, Mail, MonitorSmartphone, Network, Server, type LucideIcon } from "lucide-react";
 import * as icons from "simple-icons";
 import type { SimpleIcon } from "simple-icons";
 
 const iconMap: Record<string, SimpleIcon> = {
   Kotlin: icons.siKotlin,
+  Flutter: icons.siFlutter,
+  Dart: icons.siDart,
   Python: icons.siPython,
   React: icons.siReact,
   "React.js": icons.siReact,
@@ -51,8 +53,11 @@ const iconMap: Record<string, SimpleIcon> = {
 };
 
 const lucideFallbacks: Record<string, { Icon: LucideIcon; color: string }> = {
+  AWS: { Icon: Database, color: "#FF9900" },
   "AWS basics": { Icon: Database, color: "#FF9900" },
   "AWS S3": { Icon: Database, color: "#FF9900" },
+  "AWS EC2": { Icon: Server, color: "#FF9900" },
+  EC2: { Icon: Server, color: "#FF9900" },
   "Responsive UI": { Icon: MonitorSmartphone, color: "#c45c26" },
   "Web Scraping": { Icon: Bot, color: "#a855f7" },
   Nodemailer: { Icon: Mail, color: "#0ea5e9" },

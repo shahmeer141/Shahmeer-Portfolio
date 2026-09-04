@@ -135,7 +135,7 @@ export const experience: ExperienceItem[] = [
       "Integrated REST APIs and improved page performance and accessibility.",
       "Worked closely with designers to turn mockups into production-ready pages.",
     ],
-    stack: ["React.js", "JavaScript", "TypeScript", "Tailwind CSS", "Git"],
+    stack: ["React.js", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Git", "GitHub", "Node.js", "Express.js", "MongoDB"],
   },
 ];
 

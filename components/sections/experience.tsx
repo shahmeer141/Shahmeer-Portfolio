@@ -1,6 +1,7 @@
 import { experience } from "@/lib/site";
 import { Reveal } from "@/components/ui/reveal";
 import { Section, SectionHeading } from "@/components/ui/section";
+import { TechIcon } from "@/components/ui/tech-icon";
 
 export function Experience() {
   return (
@@ -43,8 +44,9 @@ export function Experience() {
                   {job.stack.map((item) => (
                     <span
                       key={item}
-                      className="lift-sm rounded-full border border-sage/20 px-3 py-1 text-xs text-sage-bright hover:border-sage/50 hover:bg-sage/10"
+                      className="lift-sm inline-flex items-center gap-2 rounded-full border border-sage/20 px-3 py-1 text-xs text-sage-bright hover:border-sage/50 hover:bg-sage/10"
                     >
+                      <TechIcon name={item} />
                       {item}
                     </span>
                   ))}
